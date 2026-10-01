@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículo - João Paulo Broering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1b2a41;
+            --slate: #4a5568;
+            --line: #d9dee5;
+            --paper: #ffffff;
+            --canvas: #eef1f5;
+            --accent: #2f5d8a;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--navy);
+            background: var(--canvas);
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 40px auto;
+            background: var(--paper);
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            border: 1px solid var(--line);
+        }
+
+        aside {
+            background: var(--navy);
+            color: #fff;
+            padding: 40px 28px;
+        }
+
+        #profile-image {
+            display: block;
+            width: 168px;
+            height: 168px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 28px;
+            border: 3px solid rgba(255, 255, 255, 0.25);
+        }
+
+        aside h2 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 0 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        aside dl { margin: 0; }
+        aside dt {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #aebbd0;
+            margin-top: 14px;
+        }
+        aside dd {
+            margin: 2px 0 0;
+            font-size: 0.9rem;
+            overflow-wrap: anywhere;
+        }
+
+        main { padding: 48px 48px 40px; }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        header p {
+            margin: 6px 0 0;
+            font-size: 1.05rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        section { margin-top: 36px; }
+
+        section h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--navy);
+        }
+
+        .entry h3 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .entry .meta {
+            margin: 2px 0 0;
+            color: var(--slate);
+            font-size: 0.92rem;
+        }
+
+        .entry .status {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .entry + .entry { margin-top: 18px; }
+
+        .list { margin: 0; padding-left: 20px; }
+        .list li { margin-bottom: 6px; }
+        .list strong { font-weight: 600; }
+
+        .empty { color: var(--slate); margin: 0; }
+
+        a { color: inherit; }
+        a:focus-visible { outline: 2px solid #8fb8e0; outline-offset: 2px; }
+
+        @media (max-width: 760px) {
+            .page { grid-template-columns: 1fr; margin: 0; border: 0; }
+            main { padding: 32px 24px; }
+            aside { padding: 32px 24px; }
+        }
+
+        @media print {
+            body { background: #fff; }
+            .page { margin: 0; border: 0; max-width: none; }
+            aside { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <aside>
+            <img id="profile-image" src="imagens/foto.jpeg" alt="Foto de João Paulo Broering">
+            <h2>Contato</h2>
+            <dl>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:jpbroeringg@gmail.com">jpbroeringg@gmail.com</a></dd>
+                <dt>Telefone</dt>
+                <dd><a href="tel:+5548991243942">(48) 99124-3942</a></dd>
+                <dt>Localidade</dt>
+                <dd>Palhoça - SC</dd>
+                <dt>LinkedIn</dt>
+                <dd><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-broering-18b6a323a" target="_blank" rel="noopener">linkedin.com/in/joão-paulo-broering</a></dd>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/jpbroering" target="_blank" rel="noopener">github.com/jpbroering</a></dd>
+            </dl>
+        </aside>
+
+        <main>
+            <header>
+                <h1>João Paulo Broering</h1>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+            </header>
+
+            <section>
+                <h2>Formação acadêmica</h2>
+                <div class="entry">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="meta">Faculdade Municipal de Palhoça</p>
+                    <span class="status">Em andamento - conclusão prevista para 2028/2</span>
+                </div>
+                <div class="entry">
+                    <h3>Ciência da Computação</h3>
+                    <p class="meta">Universidade do Sul de Santa Catarina (UNISUL) - 2024 a 2025 (4 semestres)</p>
+                </div>
+                <div class="entry">
+                    <h3>Ensino médio técnico em Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="meta">SENAI - São José - 2020 a 2023</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiência profissional</h2>
+                <p class="empty">Nenhuma experiência profissional a informar até o momento.</p>
+            </section>
+
+            <section>
+                <h2>Habilidades</h2>
+                <ul class="list">
+                    <li><strong>Linguagem C:</strong> intermediário</li>
+                    <li><strong>Python:</strong> intermediário</li>
+                    <li><strong>HTML:</strong> básico</li>
+                    <li><strong>CSS:</strong> básico</li>
+                    <li><strong>JavaScript:</strong> básico</li>
+                    <li><strong>Inglês:</strong> avançado</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Reconhecimentos</h2>
+                <ul class="list">
+                    <li>Finalista na FEBRACE (2024) com projeto sobre bioplástico</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
